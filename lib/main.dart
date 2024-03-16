@@ -89,8 +89,9 @@ class _MyHomePageState extends State<MyHomePage> {
               setState(() {
 
               });
-            }, icon: Icon(Icons.plus_one), label: Text("Increase")
+            }, icon: Icon(Icons.plus_one, size: 72), label: Text("Increase"), style: TextButton.styleFrom(foregroundColor: Colors.lightBlue),
             ),
+            SizedBox(height: 8,),
             TextButton.icon(onPressed: () {
               _counter -= 1;
               if(_counter < 0) {
@@ -104,8 +105,9 @@ class _MyHomePageState extends State<MyHomePage> {
               setState(() {
 
               });
-            }, icon: Icon(Icons.exposure_minus_1), label: Text("Decrease")
+            }, icon: Icon(Icons.exposure_minus_1, size: 72), label: Text("Decrease"), style: TextButton.styleFrom(foregroundColor: Colors.red),
             ),
+            SizedBox(height: 8,),
             TextButton.icon(onPressed: () {
               _counter = 0;
               updateNumber(0);
